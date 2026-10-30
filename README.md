@@ -26,7 +26,7 @@ It contains the analysis code, machine-readable results, derived analytic datase
 - `derived_data/` — the two analytic datasets used for all reported numbers
   (`nhanes_derivation.csv`, `nhis_external.csv`). Raw NCHS transport files are **not** redistributed;
   download them from CDC/NCHS (links below).
-- `documentation/` — variable-harmonisation dictionary and endpoint-code audit log.
+- `documentation/` — variable-harmonisation dictionary, endpoint-code audit log and the design-freeze/admission record.
 - `figures/` — final manuscript figures (PDF + PNG, Nature-style, 5.0 × 5.0 or 6.5 × 5.0 cm).
 - `environment/` — exact package versions (`requirements.txt`, `environment.txt`).
 
