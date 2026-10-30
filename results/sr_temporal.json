@@ -1,0 +1,26 @@
+{
+  "intercept_2016": -0.2757,
+  "intercept_2017": -0.1411,
+  "y2017_frozen": {
+    "brier": 0.03538,
+    "mean_pred": 0.0439,
+    "obs": 0.0387
+  },
+  "y2017_recal2016": {
+    "brier": 0.03528,
+    "mean_pred": 0.0342,
+    "obs": 0.0387
+  },
+  "y2016_frozen": {
+    "brier": 0.03152,
+    "mean_pred": 0.0434,
+    "obs": 0.0338
+  },
+  "y2016_recal2017": {
+    "brier": 0.03131,
+    "mean_pred": 0.0382,
+    "obs": 0.0338
+  },
+  "auroc_frozen_2016": 0.7746,
+  "auroc_frozen_2017": 0.7726
+}

@@ -1,0 +1,43 @@
+{
+  "independent_external": {
+    "auc": [
+      0.7737,
+      0.7737
+    ],
+    "slope": [
+      0.8723,
+      0.8723
+    ],
+    "intercept": [
+      -0.2131,
+      -0.2131
+    ],
+    "mean_pred": [
+      0.0436,
+      0.0436
+    ],
+    "obs": [
+      0.03598,
+      0.03598
+    ],
+    "brier": [
+      0.03325,
+      0.03325
+    ],
+    "n": [
+      38683,
+      38683
+    ],
+    "events": [
+      1392,
+      1392
+    ]
+  },
+  "worked_examples": {
+    "ex1": 0.0595,
+    "ex2": 0.0117
+  },
+  "numeric_ok": true,
+  "figures_fresh": true,
+  "verdict": "PASS"
+}

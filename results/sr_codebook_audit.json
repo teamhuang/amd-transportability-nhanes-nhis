@@ -1,0 +1,283 @@
+{
+  "source": "NCHS public-use transport files (xpt/csv), metadata + raw values",
+  "files": {
+    "VIQ_D.xpt": {
+      "n_variables": 18,
+      "path": "H:\\眼科论文\\眼科2\\data\\raw\\nhanes\\VIQ_D.xpt",
+      "size_bytes": 1049760
+    },
+    "VIQ_E.xpt": {
+      "n_variables": 18,
+      "path": "H:\\眼科论文\\眼科2\\data\\raw\\nhanes\\VIQ_E.xpt",
+      "size_bytes": 1036240
+    },
+    "OPXRET_D.xpt": {
+      "n_variables": 222,
+      "path": "H:\\眼科论文\\眼科2\\data\\raw\\nhanes\\OPXRET_D.xpt",
+      "size_bytes": 5242640
+    },
+    "OPXRET_E.xpt": {
+      "n_variables": 222,
+      "path": "H:\\眼科论文\\眼科2\\data\\raw\\nhanes\\OPXRET_E.xpt",
+      "size_bytes": 6892560
+    }
+  },
+  "variables": {
+    "VIQ310": {
+      "VIQ_D.xpt": {
+        "official_label": "Told had macular degeneration",
+        "value_labels_declared": {},
+        "raw_value_counts": {
+          "1": 141,
+          "2": 2878,
+          "9": 36,
+          "NaN": 4212
+        },
+        "n_rows": 7267
+      },
+      "VIQ_E.xpt": {
+        "official_label": "Told had macular degeneration",
+        "value_labels_declared": {},
+        "raw_value_counts": {
+          "1": 148,
+          "2": 3844,
+          "9": 32,
+          "NaN": 3149
+        },
+        "n_rows": 7173
+      }
+    },
+    "OPDUARM": {
+      "OPXRET_D.xpt": {
+        "official_label": "ARM, 3 severity levels, worse eye",
+        "value_labels_declared": {},
+        "raw_value_counts": {
+          "0": 2220,
+          "1": 166,
+          "2": 27,
+          "NaN": 521
+        },
+        "n_rows": 2934
+      },
+      "OPXRET_E.xpt": {
+        "official_label": "ARM, 3 severity levels, worse eye",
+        "value_labels_declared": {},
+        "raw_value_counts": {
+          "0": 2943,
+          "1": 220,
+          "2": 28,
+          "NaN": 672
+        },
+        "n_rows": 3863
+      }
+    },
+    "OPDULARM": {
+      "OPXRET_D.xpt": {
+        "official_label": "Late ARM, worse eye",
+        "value_labels_declared": {},
+        "raw_value_counts": {
+          "0": 2397,
+          "1": 27,
+          "NaN": 510
+        },
+        "n_rows": 2934
+      },
+      "OPXRET_E.xpt": {
+        "official_label": "Late ARM, worse eye",
+        "value_labels_declared": {},
+        "raw_value_counts": {
+          "0": 3196,
+          "1": 28,
+          "NaN": 639
+        },
+        "n_rows": 3863
+      }
+    },
+    "VIM_MDEV": {
+      "NHIS2016": {
+        "raw_value_counts": {
+          "1": 771,
+          "2": 32194,
+          "7": 7,
+          "9": 56
+        },
+        "n_rows": 33028,
+        "age_ge18_rows": 33028,
+        "file": "samadult2016csv.zip:samadult.csv"
+      },
+      "NHIS2017": {
+        "raw_value_counts": {
+          "1": 709,
+          "2": 25980,
+          "7": 5,
+          "9": 48
+        },
+        "n_rows": 26742,
+        "age_ge18_rows": 26742,
+        "file": "samadult2017csv.zip:samadult.csv"
+      }
+    }
+  },
+  "checks": [
+    {
+      "check": "VIQ_D.xpt VIQ310 codes subset of {1,2,7,9,NaN}",
+      "pass": true,
+      "detail": "{'9', '1', 'NaN', '2'}"
+    },
+    {
+      "check": "VIQ_D.xpt VIQ310 label mentions macular degeneration",
+      "pass": true,
+      "detail": "Told had macular degeneration"
+    },
+    {
+      "check": "VIQ_E.xpt VIQ310 codes subset of {1,2,7,9,NaN}",
+      "pass": true,
+      "detail": "{'9', '1', 'NaN', '2'}"
+    },
+    {
+      "check": "VIQ_E.xpt VIQ310 label mentions macular degeneration",
+      "pass": true,
+      "detail": "Told had macular degeneration"
+    },
+    {
+      "check": "OPXRET_D.xpt OPDUARM codes subset of {0,1,2,NaN}",
+      "pass": true,
+      "detail": "{'0', '1', 'NaN', '2'}"
+    },
+    {
+      "check": "OPXRET_D.xpt OPDUARM has >=2 positive severity levels",
+      "pass": true,
+      "detail": "{'0', '1', 'NaN', '2'}"
+    },
+    {
+      "check": "OPXRET_E.xpt OPDUARM codes subset of {0,1,2,NaN}",
+      "pass": true,
+      "detail": "{'0', '1', 'NaN', '2'}"
+    },
+    {
+      "check": "OPXRET_E.xpt OPDUARM has >=2 positive severity levels",
+      "pass": true,
+      "detail": "{'0', '1', 'NaN', '2'}"
+    },
+    {
+      "check": "OPXRET_D.xpt OPDULARM codes subset of {0,1,NaN}",
+      "pass": true,
+      "detail": "{'0', '1', 'NaN'}"
+    },
+    {
+      "check": "OPXRET_E.xpt OPDULARM codes subset of {0,1,NaN}",
+      "pass": true,
+      "detail": "{'0', '1', 'NaN'}"
+    },
+    {
+      "check": "NHIS2016 VIM_MDEV codes subset of {1,2,7,8,9,NaN}",
+      "pass": true,
+      "detail": "{'9', '1', '7', '2'}"
+    },
+    {
+      "check": "NHIS2017 VIM_MDEV codes subset of {1,2,7,8,9,NaN}",
+      "pass": true,
+      "detail": "{'9', '1', '7', '2'}"
+    },
+    {
+      "check": "online codebook counts exactly reproduce transport-file counts",
+      "pass": true,
+      "detail": "all cycles/variables agree"
+    }
+  ],
+  "verdict": "PASS",
+  "online_crosscheck": {
+    "retrieved": "2026-10-30",
+    "sources": [
+      {
+        "variable": "VIQ310",
+        "cycle": "2005-06",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/VIQ_D.htm",
+        "question": "{Have you/Has SP} ever been told by an eye doctor that {you have/s/he has} age-related macular (mac-u-lar) degeneration?",
+        "target": "Both males and females 40 YEARS - 150 YEARS",
+        "counts": {
+          "1 Yes": 141,
+          "2 No": 2878,
+          "7 Refused": 0,
+          "9 Don't know": 36,
+          "Missing": 4212
+        }
+      },
+      {
+        "variable": "VIQ310",
+        "cycle": "2007-08",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/VIQ_E.htm",
+        "question": "{Have you/Has SP} ever been told by an eye doctor that {you have/s/he has} age-related macular (mac-u-lar) degeneration?",
+        "target": "Both males and females 40 YEARS - 150 YEARS",
+        "counts": {
+          "1 Yes": 148,
+          "2 No": 3844,
+          "7 Refused": 0,
+          "9 Don't know": 32,
+          "Missing": 3149
+        }
+      },
+      {
+        "variable": "OPDUARM/OPDULARM",
+        "cycle": "2005-06",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/OPXRET_D.htm",
+        "target": "Both males and females 40 YEARS - 150 YEARS",
+        "counts": {
+          "OPDUARM 0 No ARM": 2220,
+          "OPDUARM 1 Early ARM": 166,
+          "OPDUARM 2 Late ARM": 27,
+          "OPDULARM 0 No": 2397,
+          "OPDULARM 1 Yes": 27
+        }
+      },
+      {
+        "variable": "OPDUARM/OPDULARM",
+        "cycle": "2007-08",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/OPXRET_E.htm",
+        "target": "Both males and females 40 YEARS - 150 YEARS",
+        "counts": {
+          "OPDUARM 0 No ARM": 2943,
+          "OPDUARM 1 Early ARM": 220,
+          "OPDUARM 2 Late ARM": 28,
+          "OPDULARM 0 No": 3196,
+          "OPDULARM 1 Yes": 28
+        }
+      },
+      {
+        "variable": "VIM_MDEV",
+        "cycle": "2016",
+        "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/NHIS/2016/samadult_freq.pdf",
+        "question": "ACN.440_00.070: EVER been told you had macular degeneration",
+        "counts": {
+          "1 Yes": 771,
+          "2 No": 32194,
+          "7 Refused": 7,
+          "8 Not ascertained": 0,
+          "9 Don't know": 56
+        }
+      },
+      {
+        "variable": "VIM_MDEV",
+        "cycle": "2017",
+        "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/NHIS/2017/samadult_freq.pdf",
+        "question": "ACN.440_00.070: EVER been told you had macular degeneration",
+        "counts": {
+          "1 Yes": 709,
+          "2 No": 25980,
+          "7 Refused": 5,
+          "8 Not ascertained": 0,
+          "9 Don't know": 48
+        }
+      },
+      {
+        "variable": "construct definition",
+        "cycle": "n/a",
+        "url": "https://www.cdc.gov/vision-health-data/case-definitions/age-related-macular-degeneration-amd.html",
+        "question": "CDC defines self-reported AMD (NHANES VIQ310: eye doctor; NHIS VIM_MDEV: doctor or other health professional) and examination-based AMD (OPDUARM) separately and makes no equivalence statement between them.",
+        "counts": {}
+      }
+    ],
+    "mismatches": [],
+    "agreement": "EXACT"
+  }
+}

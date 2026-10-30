@@ -1,0 +1,119 @@
+{
+  "derivation_n": 5773,
+  "events": 214,
+  "prev": 0.03707,
+  "EPV_per_predictor": 30.6,
+  "apparent_auc": 0.7902,
+  "corrected_auc": 0.7823,
+  "external": [
+    {
+      "cohort": "NHIS_pooled",
+      "n": 38683,
+      "prev": 0.03598,
+      "auc": 0.7748,
+      "auc_lo": 0.7625,
+      "auc_hi": 0.7871,
+      "calib_slope": 0.848,
+      "calib_intercept": -0.2327,
+      "nb_at_prev": 0.01479
+    },
+    {
+      "cohort": "NHIS_2016",
+      "n": 21364,
+      "prev": 0.0338,
+      "auc": 0.7754,
+      "auc_lo": 0.7581,
+      "auc_hi": 0.793,
+      "calib_slope": 0.8446,
+      "calib_intercept": -0.296,
+      "nb_at_prev": 0.01402
+    },
+    {
+      "cohort": "NHIS_2017",
+      "n": 17319,
+      "prev": 0.03869,
+      "auc": 0.774,
+      "auc_lo": 0.7553,
+      "auc_hi": 0.791,
+      "calib_slope": 0.8516,
+      "calib_intercept": -0.1597,
+      "nb_at_prev": 0.01608
+    },
+    {
+      "cohort": "NHIS_region_Northeast",
+      "n": 6705,
+      "prev": 0.03371,
+      "auc": 0.7832,
+      "auc_lo": 0.7565,
+      "auc_hi": 0.8123,
+      "calib_slope": 0.8757,
+      "calib_intercept": -0.3544,
+      "nb_at_prev": 0.01417
+    },
+    {
+      "cohort": "NHIS_region_Midwest",
+      "n": 8754,
+      "prev": 0.0401,
+      "auc": 0.7857,
+      "auc_lo": 0.7623,
+      "auc_hi": 0.8095,
+      "calib_slope": 0.8899,
+      "calib_intercept": -0.1605,
+      "nb_at_prev": 0.01729
+    },
+    {
+      "cohort": "NHIS_region_South",
+      "n": 13941,
+      "prev": 0.0335,
+      "auc": 0.7609,
+      "auc_lo": 0.7393,
+      "auc_hi": 0.7835,
+      "calib_slope": 0.7976,
+      "calib_intercept": -0.2866,
+      "nb_at_prev": 0.01266
+    },
+    {
+      "cohort": "NHIS_region_West",
+      "n": 9283,
+      "prev": 0.03749,
+      "auc": 0.7774,
+      "auc_lo": 0.753,
+      "auc_hi": 0.8028,
+      "calib_slope": 0.8589,
+      "calib_intercept": -0.1409,
+      "nb_at_prev": 0.0159
+    }
+  ],
+  "objective_sensitivity": {
+    "objective_anyARM": {
+      "n": 5067,
+      "events": 388,
+      "prev": 0.07657,
+      "auc_frozen_selfreport_score_on": 0.7486,
+      "ci": [
+        0.7223,
+        0.772
+      ]
+    },
+    "objective_lateARM": {
+      "n": 5100,
+      "events": 47,
+      "prev": 0.00922,
+      "auc_frozen_selfreport_score_on": 0.8945,
+      "ci": [
+        0.8513,
+        0.9333
+      ]
+    },
+    "concordance": {
+      "n": 5067,
+      "both_yes": 72,
+      "self_only": 91,
+      "obj_only": 316,
+      "neither": 4588
+    },
+    "obj_model_auc": 0.7671,
+    "obj_model_n": 5067,
+    "obj_model_events": 388
+  }
+}

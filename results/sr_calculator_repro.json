@@ -1,0 +1,24 @@
+{
+  "max_abs_delta_prob_5dp_vs_fullprecision_ref": 0.033613,
+  "max_abs_delta_LP_5dp_vs_full_on_cohort_rows": 0.214958,
+  "coef_full_precision": {
+    "const": -8.770596415851204,
+    "age_lin": 0.08181670906676008,
+    "age_r1": -3.768746630174573e-05,
+    "age_r2": 0.00015356705798725051,
+    "male": -0.4683448140686753,
+    "smoke_former": 0.33286963038109313,
+    "smoke_current": 0.1409518198859031,
+    "obesity": 0.20144318189774935,
+    "hypertension": -0.01853790193580388,
+    "diabetes": 0.1187498495825676,
+    "dyslipidemia": 0.270436904165455
+  },
+  "KNOTS": [
+    41.0,
+    53.0,
+    65.0,
+    80.0
+  ],
+  "basis": "Harrell RCS: R_j(x)=sum_{i=1..4} c_ji (x-t_i)_+^3 with end corrections (see rcs_basis.py); raw truncated cubics, not scaled"
+}

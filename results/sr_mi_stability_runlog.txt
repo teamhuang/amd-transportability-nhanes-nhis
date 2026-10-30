@@ -1,0 +1,13 @@
+PROPER-MICE STABILITY RUN @ 2026-10-29 16:58:12
+seed base=20261028, m_per_cell=6, sweeps grid 5/15/30, seed offsets 0/101/507
+  sweeps5_base: mean=0.7745 range=0.7736-0.7755 sd=0.0008
+  sweeps5_seed+101: mean=0.7743 range=0.7737-0.775 sd=0.0005
+  sweeps5_seed+507: mean=0.7749 range=0.774-0.7752 sd=0.0004
+  sweeps15_base: mean=0.7746 range=0.7723-0.7754 sd=0.0012
+  sweeps15_seed+101: mean=0.7747 range=0.774-0.7752 sd=0.0004
+  sweeps15_seed+507: mean=0.7749 range=0.7739-0.7759 sd=0.0008
+  sweeps30_base: mean=0.7748 range=0.7728-0.7754 sd=0.001
+  sweeps30_seed+101: mean=0.7745 range=0.7735-0.7752 sd=0.0006
+  sweeps30_seed+507: mean=0.7745 range=0.7738-0.7752 sd=0.0005
+grid mean=0.7746 spread=0.0006
+diagnostics: {'conditional_fits': 4500, 'binary_marginal_fallbacks': 0, 'smoking_marginal_fallbacks': 0, 'note': 'a fallback fires only when a conditional Hessian is singular/perfectly separated; counts reported honestly (not papered over)'}

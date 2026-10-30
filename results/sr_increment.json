@@ -1,0 +1,141 @@
+{
+  "increment": {
+    "unweighted": {
+      "dAUC": 0.00367,
+      "dAUC_CI": [
+        0.00078,
+        0.00679
+      ],
+      "dBrier": 0.000111,
+      "dBrier_CI": [
+        3e-06,
+        0.000217
+      ],
+      "dNB5": -2.9e-05,
+      "dNB5_CI": [
+        -0.000497,
+        0.000434
+      ]
+    },
+    "weighted": {
+      "dAUC": 0.00481,
+      "dAUC_CI": [
+        0.00149,
+        0.00824
+      ],
+      "dBrier": 4.9e-05,
+      "dBrier_CI": [
+        -4.4e-05,
+        0.000138
+      ],
+      "dNB5": -0.000121,
+      "dNB5_CI": [
+        -0.000598,
+        0.000387
+      ]
+    },
+    "dNB_grid_unweighted": [
+      {
+        "threshold": 0.02,
+        "nb_full": 0.02077,
+        "nb_age": 0.02061,
+        "dNB": 0.00016
+      },
+      {
+        "threshold": 0.05,
+        "nb_full": 0.01053,
+        "nb_age": 0.01056,
+        "dNB": -3e-05
+      },
+      {
+        "threshold": 0.08,
+        "nb_full": 0.00594,
+        "nb_age": 0.0066,
+        "dNB": -0.00066
+      },
+      {
+        "threshold": 0.1,
+        "nb_full": 0.00384,
+        "nb_age": 0.00422,
+        "dNB": -0.00038
+      }
+    ],
+    "dNB_grid_weighted": [
+      {
+        "threshold": 0.02,
+        "nb_full": 0.01529,
+        "nb_age": 0.01507,
+        "dNB": 0.00022
+      },
+      {
+        "threshold": 0.05,
+        "nb_full": 0.00718,
+        "nb_age": 0.00731,
+        "dNB": -0.00013
+      },
+      {
+        "threshold": 0.08,
+        "nb_full": 0.00416,
+        "nb_age": 0.0045,
+        "dNB": -0.00034
+      },
+      {
+        "threshold": 0.1,
+        "nb_full": 0.00253,
+        "nb_age": 0.00286,
+        "dNB": -0.00033
+      }
+    ]
+  },
+  "objective": [
+    {
+      "endpoint": "obj_anyARM",
+      "n": 5067,
+      "events": 388,
+      "auc_full": 0.751,
+      "auc_age": 0.7628,
+      "dAUC_full_minus_age": -0.0117,
+      "dAUC_CI": [
+        -0.0187,
+        -0.0052
+      ]
+    },
+    {
+      "endpoint": "obj_lateARM",
+      "n": 5100,
+      "events": 47,
+      "auc_full": 0.8941,
+      "auc_age": 0.901,
+      "dAUC_full_minus_age": -0.0069,
+      "dAUC_CI": [
+        -0.0223,
+        0.008
+      ]
+    }
+  ],
+  "gradeability": {
+    "gradable_n": 5067,
+    "ungradable_n": 706,
+    "mean_age_gradable": 59.07,
+    "mean_age_ungradable": 64.58,
+    "amd_gradable": 0.0322,
+    "amd_ungradable": 0.0722,
+    "pct_female_gradable": 0.5054,
+    "pct_female_ungradable": 0.4802
+  },
+  "age_function_form": {
+    "linear": {
+      "ext_auc": 0.7737,
+      "ext_slope": 0.8723,
+      "ext_citl": -0.2131,
+      "ext_meanpred": 0.0436
+    },
+    "rcs": {
+      "ext_auc": 0.775,
+      "ext_slope": 0.8468,
+      "ext_citl": -0.2373,
+      "ext_meanpred": 0.0444
+    },
+    "note": "RCS adds 2 df on age; external AUROC gain <0.001 while coefficients become non-reproducible at 4dp; linear retained for parsimony+reproducibility. Functional-form choice is labelled exploratory; model was NOT selected on external AUROC (both forms give ~0.774)."
+  }
+}

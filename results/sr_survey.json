@@ -1,0 +1,130 @@
+{
+  "target_note": "Design-weighted estimates target the US civilian noninstitutionalised population; the unweighted estimates target the analytic sample. They are different parameters, not a better/worse model.",
+  "prevalence": {
+    "pooled": {
+      "weighted": 0.0288,
+      "taylor_se": 0.0011,
+      "ci95": [
+        0.0267,
+        0.0309
+      ]
+    },
+    "2016": {
+      "weighted": 0.0268,
+      "taylor_se": 0.0014,
+      "ci95": [
+        0.024,
+        0.0296
+      ]
+    },
+    "2017": {
+      "weighted": 0.0307,
+      "taylor_se": 0.0016,
+      "ci95": [
+        0.0276,
+        0.0338
+      ]
+    }
+  },
+  "calibration_cluster_glm": {
+    "pooled": {
+      "slope": 0.9035,
+      "slope_se": 0.0346,
+      "slope_ci": [
+        0.8357,
+        0.9713
+      ],
+      "citl": -0.2375,
+      "citl_se": 0.0371,
+      "citl_ci": [
+        -0.3102,
+        -0.1647
+      ]
+    },
+    "2016": {
+      "slope": 0.9279,
+      "slope_se": 0.0463,
+      "slope_ci": [
+        0.8372,
+        1.0186
+      ],
+      "citl": -0.3044,
+      "citl_se": 0.053,
+      "citl_ci": [
+        -0.4083,
+        -0.2005
+      ]
+    },
+    "2017": {
+      "slope": 0.8819,
+      "slope_se": 0.0504,
+      "slope_ci": [
+        0.7831,
+        0.9808
+      ],
+      "citl": -0.1759,
+      "citl_se": 0.0518,
+      "citl_ci": [
+        -0.2774,
+        -0.0744
+      ]
+    }
+  },
+  "psu_bootstrap": {
+    "B": 1000,
+    "reps_ok_seed1": 1000,
+    "reps_ok_seed2": 1000,
+    "seed_20261028": {
+      "auc": [
+        0.7724,
+        0.8026
+      ],
+      "slope": [
+        0.8424,
+        0.9685
+      ],
+      "citl": [
+        -0.3053,
+        -0.1759
+      ],
+      "meanpred": [
+        0.0351,
+        0.0363
+      ]
+    },
+    "seed_777": {
+      "auc": [
+        0.7712,
+        0.8024
+      ],
+      "slope": [
+        0.8397,
+        0.9709
+      ],
+      "citl": [
+        -0.3067,
+        -0.1707
+      ],
+      "meanpred": [
+        0.0351,
+        0.0363
+      ]
+    },
+    "seed_stability_maxdiff": 0.0066
+  },
+  "weighted_point": {
+    "auc": 0.7874,
+    "slope": 0.9035,
+    "slope_se": 0.0346,
+    "slope_ci": [
+      0.8357,
+      0.9713
+    ],
+    "citl": -0.2375,
+    "citl_se": 0.0371,
+    "citl_ci": [
+      -0.3102,
+      -0.1647
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "sub_sample_structure": {
+    "n_cc": 5773,
+    "full_sample_analytes": {
+      "TC_present_pct": 100.0,
+      "HDL_present_pct": 100.0
+    },
+    "fasting_only_analytes": {
+      "TG_present_pct": 48.5,
+      "LDL_present_pct": 47.1
+    },
+    "cc_dyslip_zero_rows": 3197,
+    "cc_dyslip_zero_but_TG_LDL_missing": 1626,
+    "pct_zero_rows_relying_on_TChdl_only": 50.9
+  },
+  "definitions": {
+    "primary_multi_analyte": {
+      "desc": "TC>=240 OR HDL<40/50 OR TG>=200 OR LDL>=160 (TG/LDL from fasting sub-sample; non-fasting evaluated on TC/HDL only)",
+      "apparent": 0.7911,
+      "ext_auc": 0.7737,
+      "ext_slope": 0.8723,
+      "ext_citl": -0.2131,
+      "ext_age_only": 0.7701,
+      "dAUC_full_minus_age": 0.0036,
+      "dyslip_coef": 0.2686,
+      "dyslip_prev_cc": 0.4462,
+      "paired_dAUC": {
+        "mean": 0.0036,
+        "ci": [
+          0.0007,
+          0.0066
+        ]
+      }
+    },
+    "sensitivity_tc_hdl_only": {
+      "desc": "TC>=240 OR HDL<40/50 (full-MEC-sample analytes only; WTMEC2YR-valid)",
+      "apparent": 0.7913,
+      "ext_auc": 0.7732,
+      "ext_slope": 0.8597,
+      "ext_citl": -0.274,
+      "ext_age_only": 0.7701,
+      "dAUC_full_minus_age": 0.0031,
+      "dyslip_coef": 0.3169,
+      "dyslip_prev_cc": 0.2898,
+      "paired_dAUC": {
+        "mean": 0.0031,
+        "ci": [
+          -0.0003,
+          0.0066
+        ]
+      }
+    }
+  },
+  "weights_note": "NHANES total cholesterol and HDL are measured on the full MEC sample and carry WTMEC2YR (correct for the unweighted primary and the design-weighted derivation). Triglycerides and calculated LDL are available only in the overnight-fasting sub-sample (~48% of adults >=40 here), which carries a distinct fasting sub-sample weight. Mixing them means no single weight is exactly right for the multi-analyte variable; this is why the design-weighted derivation is labelled indicative. The TC+HDL-only definition removes the sub-sample mismatch entirely.",
+  "conclusion": "Switching to the uniform full-sample TC+HDL definition moves external AUROC 0.7737->0.7732, apparent 0.7911->0.7913, slope 0.8723->0.8597, CITL -0.2131->-0.2740; the incremental dAUROC over age stays ~0.0031. Headline conclusions (age-dominated, external AUROC ~0.77, persistent over-prediction, negligible clinical-variable gain) are unchanged; the tighter definition slightly enlarges the over-prediction (lower dyslipidaemia prevalence 0.446->0.290)."
+}

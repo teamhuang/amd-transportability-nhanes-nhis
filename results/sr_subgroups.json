@@ -1,0 +1,92 @@
+[
+  {
+    "n": 13037,
+    "events": 110,
+    "prev": 0.00844,
+    "auc": 0.647,
+    "brier": 0.00835,
+    "slope": 0.9905,
+    "intercept": 0.2604,
+    "mean_pred": 0.00652,
+    "subgroup": "age 40-54",
+    "auc_ci_individual": [
+      0.5922,
+      0.7008
+    ]
+  },
+  {
+    "n": 10166,
+    "events": 198,
+    "prev": 0.01948,
+    "auc": 0.57,
+    "brier": 0.0191,
+    "slope": 0.6146,
+    "intercept": -0.0671,
+    "mean_pred": 0.02079,
+    "subgroup": "age 55-64",
+    "auc_ci_individual": [
+      0.5336,
+      0.6043
+    ]
+  },
+  {
+    "n": 8898,
+    "events": 345,
+    "prev": 0.03877,
+    "auc": 0.5659,
+    "brier": 0.03755,
+    "slope": 0.5649,
+    "intercept": -0.3136,
+    "mean_pred": 0.05219,
+    "subgroup": "age 65-74",
+    "auc_ci_individual": [
+      0.5372,
+      0.5924
+    ]
+  },
+  {
+    "n": 6582,
+    "events": 739,
+    "prev": 0.11228,
+    "auc": 0.6292,
+    "brier": 0.09859,
+    "slope": 1.0473,
+    "intercept": -0.2633,
+    "mean_pred": 0.14067,
+    "subgroup": "age 75+",
+    "auc_ci_individual": [
+      0.6092,
+      0.6494
+    ]
+  },
+  {
+    "n": 17737,
+    "events": 532,
+    "prev": 0.02999,
+    "auc": 0.7622,
+    "brier": 0.02808,
+    "slope": 0.847,
+    "intercept": -0.0656,
+    "mean_pred": 0.03187,
+    "subgroup": "sex male",
+    "auc_ci_individual": [
+      0.7421,
+      0.7821
+    ]
+  },
+  {
+    "n": 20946,
+    "events": 860,
+    "prev": 0.04106,
+    "auc": 0.7786,
+    "brier": 0.03763,
+    "slope": 0.9216,
+    "intercept": -0.2979,
+    "mean_pred": 0.05354,
+    "subgroup": "sex female",
+    "auc_ci_individual": [
+      0.7641,
+      0.7935
+    ]
+  }
+]

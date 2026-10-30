@@ -1,0 +1,38 @@
+{
+  "model": "Logistic, self-reported AMD, NHANES 2005-08 complete cases (n=5773, 214 events)",
+  "age_term": "linear (a restricted cubic spline added <0.001 to external AUROC and made the published coefficients non-reproducible at 4-dp; see sr_external_age/knot sensitivity)",
+  "reference": "male=0 (female), never-smoker, non-obese, normotensive, non-diabetic, normal lipids",
+  "logit_formula": "logit(p) = const + b_age*age + b_male*male + b_former*former + b_current*current + b_obese*obese + b_htn*htn + b_dm*dm + b_lipid*lipid",
+  "coefficients_4dp": {
+    "const": -9.6317,
+    "age": 0.0945,
+    "male": -0.4657,
+    "smoke_former": 0.307,
+    "smoke_current": 0.1179,
+    "obesity": 0.1668,
+    "hypertension": -0.0185,
+    "diabetes": 0.089,
+    "dyslipidemia": 0.2686
+  },
+  "coefficients_full_precision": {
+    "const": -9.631670654242646,
+    "age": 0.09447397035972187,
+    "male": -0.46566838200751537,
+    "smoke_former": 0.3070134783615888,
+    "smoke_current": 0.11785379506291842,
+    "obesity": 0.16683794731138601,
+    "hypertension": -0.018509105840900424,
+    "diabetes": 0.08900638922680451,
+    "dyslipidemia": 0.2686274594590648
+  },
+  "worked_examples": {
+    "70yM(former,obese,HTN,highchol,nonDiab)": 0.0596,
+    "55F healthy": 0.0117
+  },
+  "per_decade_OR": 2.572,
+  "repro_check": {
+    "max_abs_delta_LP_4dp_vs_full": 0.00223,
+    "max_abs_delta_prob": 0.000453,
+    "note": "4-dp coefficients reproduce the model to <1e-2 logit across the cohort range"
+  }
+}

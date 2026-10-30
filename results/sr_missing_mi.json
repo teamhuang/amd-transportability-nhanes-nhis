@@ -1,0 +1,93 @@
+{
+  "flow": {
+    "age_eligible_ge40": 7011,
+    "valid_amd_outcome": 7011,
+    "complete_predictors": 5773,
+    "excluded_incomplete_predictors": 1238,
+    "fundus_gradable_anyARM": 5067,
+    "fundus_gradable_lateARM": 5100,
+    "amd_prev_included": 0.0371,
+    "amd_prev_excluded": 0.0606,
+    "amd_prev_all_eligible": 0.0412
+  },
+  "included_vs_excluded": {
+    "age": {
+      "included": 59.7474,
+      "excluded": 64.3094
+    },
+    "male": {
+      "included": 0.5023,
+      "excluded": 0.4612
+    },
+    "amd_self": {
+      "included": 0.0371,
+      "excluded": 0.0606
+    },
+    "glaucoma_self": {
+      "included": 0.0645,
+      "excluded": 0.081
+    },
+    "cataract_surg": {
+      "included": 0.1305,
+      "excluded": 0.2291
+    },
+    "diabetes": {
+      "included": 0.1576,
+      "excluded": 0.1967
+    },
+    "smoke_current": {
+      "included": 0.1997,
+      "excluded": 0.1795
+    },
+    "smoke_former": {
+      "included": 0.3189,
+      "excluded": 0.3168
+    }
+  },
+  "complete_case": {
+    "der_auc": 0.7911,
+    "ext_auc": 0.7737,
+    "ext_slope": 0.8723,
+    "ext_citl": -0.2131,
+    "ext_meanpred": 0.0436,
+    "ext_obs": 0.036,
+    "coef": {
+      "const": -9.6317,
+      "age": 0.0945,
+      "male": -0.4657,
+      "smoke_former": 0.307,
+      "smoke_current": 0.1179,
+      "obesity": 0.1668,
+      "hypertension": -0.0185,
+      "diabetes": 0.089,
+      "dyslipidemia": 0.2686
+    }
+  },
+  "multiple_imputation": {
+    "M": 20,
+    "ext_auc_mean": 0.7745,
+    "ext_auc_min": 0.7729,
+    "ext_auc_max": 0.7758,
+    "ext_auc_sd": 0.0006,
+    "der_auc_mean": 0.791,
+    "ext_slope_mean": 0.9047,
+    "ext_citl_mean": -0.2184,
+    "pooled_coef": {
+      "const": -9.4641,
+      "age": 0.0931,
+      "male": -0.3364,
+      "smoke_former": 0.1552,
+      "smoke_current": 0.0507,
+      "obesity": 0.0679,
+      "hypertension": 0.0087,
+      "diabetes": 0.1566,
+      "dyslipidemia": 0.2015
+    },
+    "age_coef_between_sd": 0.0006,
+    "validity": {
+      "imputed_cells_out_of_range_clipped": 12530,
+      "illegal_smoking_combos_resolved": 5,
+      "note": "binary predictors clipped to [0,1] and rounded to valid 0/1; smoking dummies constrained mutually exclusive (current precedence); all analyses on valid 0/1"
+    }
+  }
+}

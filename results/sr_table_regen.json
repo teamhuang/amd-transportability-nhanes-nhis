@@ -1,0 +1,91 @@
+{
+  "regenerated_at": "2026-10-31 00:28:46",
+  "runs": [
+    {
+      "script": "make_tables_sr.py",
+      "returncode": 0,
+      "seconds": 0.5,
+      "stderr_tail": ""
+    },
+    {
+      "script": "make_s6_table.py",
+      "returncode": 0,
+      "seconds": 0.0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "make_round4_tables_figs.py",
+      "returncode": 0,
+      "seconds": 1.4,
+      "stderr_tail": ""
+    }
+  ],
+  "seconds_total": 2.0,
+  "hashes_before": {
+    "analysis\\output\\Tables_sr.md": "d6563f916129f500a691593754d60dc364f34b08215fbaaa1f59ad8322230f7a",
+    "analysis\\output\\Tables_sr4.md": "59284e089d0b5418cf14a38a4b340ed6a014d29e00d15a170ca3c09b358739f8",
+    "manuscript\\harmonization_dictionary.md": "e95ea7f5715cc113057cd38ac52d7bb53a4338bf9dc894ea883445f9ee3e5382",
+    "manuscript\\题目4手稿.md": "67ae03dc6b4d8827409da1393e00e58b98e833b4abe6c66fc6240e9f54938f19",
+    "manuscript\\Supplementary_Information.md": "93370bfe4b4614b4827d7a13af3a0b310d5a3a5f5ba0a90a8a67b0ece4266be4"
+  },
+  "hashes_after": {
+    "analysis\\output\\Tables_sr.md": "d6563f916129f500a691593754d60dc364f34b08215fbaaa1f59ad8322230f7a",
+    "analysis\\output\\Tables_sr4.md": "59284e089d0b5418cf14a38a4b340ed6a014d29e00d15a170ca3c09b358739f8",
+    "manuscript\\harmonization_dictionary.md": "e95ea7f5715cc113057cd38ac52d7bb53a4338bf9dc894ea883445f9ee3e5382",
+    "manuscript\\题目4手稿.md": "67ae03dc6b4d8827409da1393e00e58b98e833b4abe6c66fc6240e9f54938f19",
+    "manuscript\\Supplementary_Information.md": "93370bfe4b4614b4827d7a13af3a0b310d5a3a5f5ba0a90a8a67b0ece4266be4"
+  },
+  "files_changed": [],
+  "tables_in_generated_files": [
+    "Table 1",
+    "Table 2",
+    "Table 3",
+    "Table 4",
+    "Table 5",
+    "Supplementary Table S1",
+    "Supplementary Table S2",
+    "Supplementary Table S3",
+    "Supplementary Table S4",
+    "Supplementary Table S5",
+    "Supplementary Table S6",
+    "Supplementary Table S7",
+    "Supplementary Table S8",
+    "Supplementary Table S9",
+    "Supplementary Table S10",
+    "Supplementary Table S11",
+    "Supplementary Table S12",
+    "Supplementary Table S13",
+    "Supplementary Table S14"
+  ],
+  "tables_missing_from_manuscript": [],
+  "manuscript_block_matches_generated": true,
+  "si_table_block_matches_generated": true,
+  "main_tables": [
+    "Table 1",
+    "Table 2",
+    "Table 3",
+    "Table 4",
+    "Table 5"
+  ],
+  "si_tables": [
+    "Supplementary Table S1",
+    "Supplementary Table S2",
+    "Supplementary Table S3",
+    "Supplementary Table S4",
+    "Supplementary Table S5",
+    "Supplementary Table S6",
+    "Supplementary Table S7",
+    "Supplementary Table S8",
+    "Supplementary Table S9",
+    "Supplementary Table S10",
+    "Supplementary Table S11",
+    "Supplementary Table S12",
+    "Supplementary Table S13",
+    "Supplementary Table S14"
+  ],
+  "applied_to_manuscript": false,
+  "manuscript_last_edited": "2026-10-30 23:55:19",
+  "first_difference_main": null,
+  "first_difference_si": null,
+  "verdict": "PASS"
+}

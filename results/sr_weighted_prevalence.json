@@ -1,0 +1,42 @@
+{
+ "NHANES": {
+  "age_unw": 59.75,
+  "female_unw": 49.8,
+  "female_w": 52.2,
+  "smoke_former_unw": 31.89,
+  "smoke_former_w": 30.59,
+  "smoke_current_unw": 19.97,
+  "smoke_current_w": 20.37,
+  "obesity_unw": 37.4,
+  "obesity_w": 36.21,
+  "hypertension_unw": 25.71,
+  "hypertension_w": 21.65,
+  "diabetes_unw": 15.76,
+  "diabetes_w": 11.37,
+  "dyslipidemia_unw": 44.62,
+  "dyslipidemia_w": 45.09,
+  "amd_self_unw": 3.71,
+  "amd_self_w": 3.11,
+  "age_w": 56.55
+ },
+ "NHIS": {
+  "age_unw": 61.23,
+  "female_unw": 54.1,
+  "female_w": 51.6,
+  "smoke_former_unw": 30.34,
+  "smoke_former_w": 28.66,
+  "smoke_current_unw": 15.26,
+  "smoke_current_w": 14.4,
+  "obesity_unw": 32.53,
+  "obesity_w": 32.86,
+  "hypertension_unw": 47.14,
+  "hypertension_w": 44.06,
+  "diabetes_unw": 14.53,
+  "diabetes_w": 13.81,
+  "dyslipidemia_unw": 42.15,
+  "dyslipidemia_w": 40.47,
+  "amd_self_unw": 3.6,
+  "amd_self_w": 2.88,
+  "age_w": 59.02
+ }
+}

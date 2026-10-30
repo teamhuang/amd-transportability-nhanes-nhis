@@ -1,0 +1,104 @@
+{
+  "external_pooled": {
+    "n": 38683,
+    "events": 1392,
+    "prev": 0.03598,
+    "auc": 0.7737,
+    "brier": 0.03325,
+    "slope": 0.8723,
+    "intercept": -0.2131,
+    "mean_pred": 0.0436,
+    "auc_ci_individual": [
+      0.7614,
+      0.7859
+    ]
+  },
+  "delta": {
+    "dAUC": 0.0036,
+    "dAUC_CI": [
+      0.0007,
+      0.0068
+    ],
+    "dBrier": 0.00011,
+    "dBrier_CI": [
+      -2e-05,
+      0.00022
+    ]
+  },
+  "predictor_holm": {
+    "male": {
+      "chi2": 9.24,
+      "df": 1,
+      "p": 0.0023654688176785402,
+      "p_holm": 0.0142
+    },
+    "smoke": {
+      "chi2": 3.73,
+      "df": 2,
+      "p": 0.15522897448435052,
+      "p_holm": 0.6209
+    },
+    "obesity": {
+      "chi2": 1.15,
+      "df": 1,
+      "p": 0.2842349115052045,
+      "p_holm": 0.8527
+    },
+    "hypertension": {
+      "chi2": 0.01,
+      "df": 1,
+      "p": 0.9037048973208988,
+      "p_holm": 1.0
+    },
+    "diabetes": {
+      "chi2": 0.25,
+      "df": 1,
+      "p": 0.6199972234441118,
+      "p_holm": 1.0
+    },
+    "dyslipidemia": {
+      "chi2": 3.37,
+      "df": 1,
+      "p": 0.06636439999206664,
+      "p_holm": 0.3318
+    },
+    "age": {
+      "chi2": 158.14,
+      "df": 1,
+      "p": 2.884042521511042e-36,
+      "p_holm": 0.0
+    }
+  },
+  "fundus_anyARM": {
+    "n": 5067,
+    "events": 388,
+    "auc_full": 0.751,
+    "auc_age": 0.7628
+  },
+  "fundus_late": {
+    "n": 5100,
+    "events": 47,
+    "auc_full": 0.8941,
+    "auc_age": 0.901,
+    "auc_full_CI95": [
+      0.849,
+      0.933
+    ],
+    "n_boot_valid": 2000
+  },
+  "repro": {
+    "max_abs_delta_LP_4dp": 0.00223,
+    "max_abs_delta_prob": 0.000453
+  },
+  "coef_4dp": {
+    "const": -9.6317,
+    "age": 0.0945,
+    "male": -0.4657,
+    "smoke_former": 0.307,
+    "smoke_current": 0.1179,
+    "obesity": 0.1668,
+    "hypertension": -0.0185,
+    "diabetes": 0.089,
+    "dyslipidemia": 0.2686
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "age_only": {
+    "derivation": {
+      "auc": 0.7831,
+      "brier": 0.03391,
+      "slope": 1.0,
+      "intercept": 0.0,
+      "mean_pred": 0.0371,
+      "obs": 0.0371,
+      "n": 5773,
+      "events": 214
+    },
+    "external": {
+      "auc": 0.7701,
+      "brier": 0.03314,
+      "slope": 0.94,
+      "intercept": -0.1672,
+      "mean_pred": 0.0419,
+      "obs": 0.036,
+      "n": 38683,
+      "events": 1392
+    }
+  },
+  "age_sex": {
+    "derivation": {
+      "auc": 0.7874,
+      "brier": 0.0338,
+      "slope": 1.0,
+      "intercept": 0.0,
+      "mean_pred": 0.0371,
+      "obs": 0.0371,
+      "n": 5773,
+      "events": 214
+    },
+    "external": {
+      "auc": 0.7695,
+      "brier": 0.0332,
+      "slope": 0.903,
+      "intercept": -0.2048,
+      "mean_pred": 0.0433,
+      "obs": 0.036,
+      "n": 38683,
+      "events": 1392
+    }
+  },
+  "mode_clean": {
+    "derivation": {
+      "auc": 0.7886,
+      "brier": 0.03371,
+      "slope": 1.0,
+      "intercept": -0.0,
+      "mean_pred": 0.0371,
+      "obs": 0.0371,
+      "n": 5773,
+      "events": 214
+    },
+    "external": {
+      "auc": 0.7716,
+      "brier": 0.0332,
+      "slope": 0.8947,
+      "intercept": -0.1998,
+      "mean_pred": 0.0431,
+      "obs": 0.036,
+      "n": 38683,
+      "events": 1392
+    }
+  },
+  "full": {
+    "derivation": {
+      "auc": 0.7911,
+      "brier": 0.03363,
+      "slope": 1.0,
+      "intercept": -0.0,
+      "mean_pred": 0.0371,
+      "obs": 0.0371,
+      "n": 5773,
+      "events": 214
+    },
+    "external": {
+      "auc": 0.7737,
+      "brier": 0.03325,
+      "slope": 0.8723,
+      "intercept": -0.2131,
+      "mean_pred": 0.0436,
+      "obs": 0.036,
+      "n": 38683,
+      "events": 1392
+    }
+  },
+  "delta_full_vs_age": {
+    "dAUC": 0.0036,
+    "CI": [
+      0.0008,
+      0.0068
+    ]
+  }
+}

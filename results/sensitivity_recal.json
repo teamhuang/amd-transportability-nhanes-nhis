@@ -1,0 +1,27 @@
+{
+  "asis": {
+    "auc": 0.7748,
+    "brier": 0.03337,
+    "mean_pred": 0.0443
+  },
+  "intercept_only": {
+    "auc": 0.7748,
+    "brier": 0.03306,
+    "mean_pred": 0.036,
+    "shift": -0.2327
+  },
+  "intercept_slope": {
+    "auc": 0.7748,
+    "brier": 0.033,
+    "mean_pred": 0.036
+  },
+  "recalibration_coefs": {
+    "intercept_only_a": -0.2327,
+    "full_b0": -0.6137,
+    "full_b1": 0.848
+  },
+  "weighted_derivation": {
+    "auc_nhis": 0.7756,
+    "note": "freq_weights approx of design weighting"
+  }
+}

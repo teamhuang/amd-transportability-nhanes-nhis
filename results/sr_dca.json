@@ -1,0 +1,42 @@
+[
+  {
+    "threshold": 0.02,
+    "flagged_per_1000": 522,
+    "cases_caught_per_1000": 31,
+    "sensitivity": 0.856,
+    "cases_missed_per_1000": 5,
+    "nb_model": 0.02077,
+    "nb_all": 0.01631,
+    "nb_ageonly": 0.02061
+  },
+  {
+    "threshold": 0.05,
+    "flagged_per_1000": 280,
+    "cases_caught_per_1000": 24,
+    "sensitivity": 0.667,
+    "cases_missed_per_1000": 12,
+    "nb_model": 0.01053,
+    "nb_all": -0.01475,
+    "nb_ageonly": 0.01056
+  },
+  {
+    "threshold": 0.08,
+    "flagged_per_1000": 173,
+    "cases_caught_per_1000": 19,
+    "sensitivity": 0.536,
+    "cases_missed_per_1000": 17,
+    "nb_model": 0.00594,
+    "nb_all": -0.04784,
+    "nb_ageonly": 0.0066
+  },
+  {
+    "threshold": 0.1,
+    "flagged_per_1000": 136,
+    "cases_caught_per_1000": 17,
+    "sensitivity": 0.473,
+    "cases_missed_per_1000": 19,
+    "nb_model": 0.00384,
+    "nb_all": -0.07113,
+    "nb_ageonly": 0.00422
+  }
+]

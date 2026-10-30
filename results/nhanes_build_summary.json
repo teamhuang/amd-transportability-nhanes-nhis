@@ -1,0 +1,34 @@
+{
+  "n_age40_valid_amd": 7011,
+  "cycle_counts": {
+    "5.0": 3992,
+    "4.0": 3019
+  },
+  "n_complete_case": 5773,
+  "prevalence_amd_self": 0.04122,
+  "prevalence_amd_self_cc": 0.03707,
+  "prevalence_obj_anyARM": 0.07842,
+  "prevalence_obj_lateARM": 0.00981,
+  "n_valid_obj_anyARM": 5560,
+  "events_amd_self_cc": 214,
+  "predictor_missing": {
+    "age": 0,
+    "male": 0,
+    "smoke_former": 7,
+    "smoke_current": 7,
+    "obesity": 429,
+    "hypertension": 869,
+    "diabetes": 8,
+    "dyslipidemia": 659
+  },
+  "exposure_prevalence_cc": {
+    "age": 59.7474,
+    "male": 0.5023,
+    "smoke_former": 0.3189,
+    "smoke_current": 0.1997,
+    "obesity": 0.374,
+    "hypertension": 0.2571,
+    "diabetes": 0.1576,
+    "dyslipidemia": 0.4462
+  }
+}

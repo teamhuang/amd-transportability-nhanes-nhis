@@ -1,0 +1,178 @@
+{
+  "age": {
+    "nhis": [
+      {
+        "year": 2016,
+        "max_age": 85.0,
+        "n_eq_70": 480,
+        "n_gt_70": 5409,
+        "pct_ge70": 17.83,
+        "nhis_40_69_n": 16482,
+        "nhis_ge40_n": 22371
+      },
+      {
+        "year": 2017,
+        "max_age": 85.0,
+        "n_eq_70": 451,
+        "n_gt_70": 4547,
+        "pct_ge70": 18.69,
+        "nhis_40_69_n": 13175,
+        "nhis_ge40_n": 18173
+      }
+    ],
+    "nhanes": {
+      "field": "RIDAGEYR",
+      "max_age": 85.0,
+      "nhan_40_69_n": 5007
+    },
+    "analytic_40_69": {
+      "ext_n": 28285,
+      "ext_events": 484,
+      "der_n": 4274,
+      "der_events": 68,
+      "ext_prev": 0.01711
+    }
+  },
+  "external": {
+    "NHIS_pooled": {
+      "n": 38683,
+      "events": 1392,
+      "prev": 0.03598,
+      "auc": 0.7737,
+      "brier": 0.03325,
+      "slope": 0.8723,
+      "intercept": -0.2131,
+      "mean_pred": 0.0436,
+      "auc_ci_individual": [
+        0.7614,
+        0.7859
+      ]
+    },
+    "NHIS_2016": {
+      "n": 21364,
+      "events": 722,
+      "prev": 0.0338,
+      "auc": 0.7746,
+      "brier": 0.03152,
+      "slope": 0.8717,
+      "intercept": -0.2757,
+      "mean_pred": 0.04335,
+      "auc_ci_individual": [
+        0.7575,
+        0.7922
+      ]
+    },
+    "NHIS_2017": {
+      "n": 17319,
+      "events": 670,
+      "prev": 0.03869,
+      "auc": 0.7726,
+      "brier": 0.03538,
+      "slope": 0.8728,
+      "intercept": -0.1411,
+      "mean_pred": 0.04391,
+      "auc_ci_individual": [
+        0.754,
+        0.7899
+      ]
+    },
+    "NHIS_region_Northeast": {
+      "n": 6705,
+      "events": 226,
+      "prev": 0.03371,
+      "auc": 0.7816,
+      "brier": 0.03136,
+      "slope": 0.915,
+      "intercept": -0.3307,
+      "mean_pred": 0.04543,
+      "auc_ci_individual": [
+        0.755,
+        0.8103
+      ]
+    },
+    "NHIS_region_Midwest": {
+      "n": 8754,
+      "events": 351,
+      "prev": 0.0401,
+      "auc": 0.7845,
+      "brier": 0.03639,
+      "slope": 0.9177,
+      "intercept": -0.1365,
+      "mean_pred": 0.0453,
+      "auc_ci_individual": [
+        0.7608,
+        0.8078
+      ]
+    },
+    "NHIS_region_South": {
+      "n": 13941,
+      "events": 467,
+      "prev": 0.0335,
+      "auc": 0.76,
+      "brier": 0.03151,
+      "slope": 0.8183,
+      "intercept": -0.2705,
+      "mean_pred": 0.04279,
+      "auc_ci_individual": [
+        0.7382,
+        0.7829
+      ]
+    },
+    "NHIS_region_West": {
+      "n": 9283,
+      "events": 348,
+      "prev": 0.03749,
+      "auc": 0.7762,
+      "brier": 0.03427,
+      "slope": 0.8766,
+      "intercept": -0.1236,
+      "mean_pred": 0.0419,
+      "auc_ci_individual": [
+        0.7523,
+        0.8015
+      ]
+    },
+    "_pooled PSU-cluster CI": {
+      "n_rep": 200,
+      "auc": [
+        0.7602,
+        0.7875
+      ],
+      "slope": [
+        0.8157,
+        0.9353
+      ],
+      "intercept": [
+        -0.2726,
+        -0.1594
+      ]
+    },
+    "_delta full vs age (PSU-cluster, paired)": {
+      "dAUC": 0.0036,
+      "dAUC_CI": [
+        0.0007,
+        0.0068
+      ],
+      "dBrier": 0.00011,
+      "dBrier_CI": [
+        -2e-05,
+        0.00022
+      ]
+    }
+  },
+  "frozen_coef_full": {
+    "const": -9.631670654242646,
+    "age_lin": 0.09447397035972187,
+    "age_r1": -0.46566838200751537,
+    "age_r2": 0.3070134783615888,
+    "male": 0.11785379506291842,
+    "smoke_former": 0.16683794731138601,
+    "smoke_current": -0.018509105840900424,
+    "obesity": 0.08900638922680451,
+    "hypertension": 0.2686274594590648
+  },
+  "frozen_coef_ageonly": {
+    "const": -9.34776403356452,
+    "age_lin": 0.09203612722009265
+  }
+}

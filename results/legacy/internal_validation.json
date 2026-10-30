@@ -1,0 +1,22 @@
+{
+  "apparent_auc": 0.7902,
+  "optimism_auc": 0.0078,
+  "corrected_auc": 0.7823,
+  "n_boot": 500,
+  "B": 500,
+  "seed": 20261028,
+  "note": "internal calibration slope optimism is unstable at 214 events/10 terms and is intentionally NOT reported; calibration is assessed in the external cohorts (Van Houwelingen slope + intercept-in-the-large).",
+  "derivation_calib": {
+    "slope": 1.0,
+    "slope_ci": [
+      0.8649,
+      1.1351
+    ],
+    "calib_intercept": 0.0,
+    "intercept_ci": [
+      -0.1406,
+      0.1406
+    ]
+  },
+  "brier": 0.0336
+}

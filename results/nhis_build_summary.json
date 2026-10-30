@@ -1,0 +1,37 @@
+{
+  "n_40plus_valid_amd": 40438,
+  "by_year": {
+    "2016": {
+      "n": 22310,
+      "amd_prev": 0.03362,
+      "cc_n": 21364
+    },
+    "2017": {
+      "n": 18128,
+      "amd_prev": 0.03834,
+      "cc_n": 17319
+    }
+  },
+  "amd_prev_pooled": 0.03573,
+  "exposure_prevalence_cc": {
+    "age": 61.2256,
+    "male": 0.4585,
+    "smoke_former": 0.3034,
+    "smoke_current": 0.1526,
+    "obesity": 0.3253,
+    "hypertension": 0.4714,
+    "diabetes": 0.1453,
+    "dyslipidemia": 0.4215
+  },
+  "predictor_missing": {
+    "age": 0,
+    "male": 0,
+    "smoke_former": 0,
+    "smoke_current": 0,
+    "obesity": 1590,
+    "hypertension": 60,
+    "diabetes": 37,
+    "dyslipidemia": 142
+  },
+  "events_amd_cc": 1392
+}

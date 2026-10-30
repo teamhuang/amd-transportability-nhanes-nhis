@@ -1,0 +1,436 @@
+{
+  "models": {
+    "age_only": {
+      "derivation": {
+        "n": 5773,
+        "events": 214,
+        "apparent_auc": 0.7831,
+        "terms": 4,
+        "converged": true
+      },
+      "external_pooled": {
+        "auc": 0.7701,
+        "brier": 0.0332,
+        "calib_slope": 0.9106,
+        "calib_intercept": -0.1882,
+        "mean_pred": 0.0426,
+        "obs": 0.036
+      }
+    },
+    "age_sex": {
+      "derivation": {
+        "n": 5773,
+        "events": 214,
+        "apparent_auc": 0.7884,
+        "terms": 5,
+        "converged": true
+      },
+      "external_pooled": {
+        "auc": 0.7695,
+        "brier": 0.0333,
+        "calib_slope": 0.8791,
+        "calib_intercept": -0.2258,
+        "mean_pred": 0.044,
+        "obs": 0.036
+      }
+    },
+    "full": {
+      "derivation": {
+        "n": 5773,
+        "events": 214,
+        "apparent_auc": 0.7908,
+        "terms": 11,
+        "converged": true
+      },
+      "external_pooled": {
+        "auc": 0.775,
+        "brier": 0.0334,
+        "calib_slope": 0.8468,
+        "calib_intercept": -0.2373,
+        "mean_pred": 0.0444,
+        "obs": 0.036
+      }
+    },
+    "mode_clean": {
+      "derivation": {
+        "n": 5773,
+        "events": 214,
+        "apparent_auc": 0.789,
+        "terms": 8,
+        "converged": true
+      },
+      "external_pooled": {
+        "auc": 0.772,
+        "brier": 0.03332,
+        "calib_slope": 0.8686,
+        "calib_intercept": -0.2236,
+        "mean_pred": 0.0439,
+        "obs": 0.036
+      }
+    },
+    "delta_auc_full_minus_ageonly": {
+      "value": 0.0049,
+      "ci": [
+        0.0017,
+        0.0086
+      ],
+      "nboot": 1000
+    },
+    "age40_69": {
+      "auc": 0.6848,
+      "brier": 0.0167,
+      "calib_slope": 0.9457,
+      "calib_intercept": 0.0049,
+      "mean_pred": 0.017,
+      "obs": 0.0171
+    },
+    "knot_sensitivity": {
+      "linear_age": 0.7737,
+      "rcs_3df": 0.775
+    }
+  },
+  "design": {
+    "weighted_prevalences": {
+      "nhanes_amd_w": 0.0311,
+      "nhis_amd_w": 0.0288,
+      "nhis_htn_w": 0.4406,
+      "nhanes_htn_w": 0.2165
+    },
+    "weighted_note": "weighted point estimates via GLM Binomial freq_weights",
+    "weighted_betas": {
+      "Intercept": -9.1637,
+      "age_lin": 0.0862,
+      "age_r1": -0.0,
+      "age_r2": 0.0001,
+      "male": -0.4226,
+      "smoke_former": 0.2393,
+      "smoke_current": 0.3261,
+      "obesity": 0.1322,
+      "hypertension": -0.0225,
+      "diabetes": 0.1384,
+      "dyslipidemia": 0.3404
+    },
+    "psu_cluster_bootstrap": {
+      "n_rep": 200,
+      "auc_ci": [
+        0.762,
+        0.7884
+      ],
+      "slope_ci": [
+        0.7964,
+        0.8999
+      ],
+      "intercept_ci": [
+        -0.2979,
+        -0.1841
+      ]
+    }
+  },
+  "temporal": {
+    "a_from2016": -0.3009,
+    "a_from2017": -0.1639,
+    "naive_2017": {
+      "brier": 0.03548,
+      "mean_pred": 0.0447
+    },
+    "recal2016_on2017": {
+      "brier": 0.03525,
+      "mean_pred": 0.0342
+    },
+    "naive_2016": {
+      "brier": 0.03171,
+      "mean_pred": 0.0442
+    },
+    "recal2017_on2016": {
+      "brier": 0.03138,
+      "mean_pred": 0.0382
+    },
+    "auroc_frozen_2016": 0.7756,
+    "auroc_frozen_2017": 0.7742
+  },
+  "missingness": {
+    "nhanes": {
+      "obesity": 0.0612,
+      "hypertension": 0.1239,
+      "dyslipidemia": 0.094,
+      "diabetes": 0.0011,
+      "smoke_former": 0.001,
+      "smoke_current": 0.001,
+      "any_pred_missing_pct": 0.1766,
+      "included_amd_prev": 0.0371,
+      "all_age40_amd_prev": 0.0412
+    },
+    "nhis_any_pred_missing_pct": 0.0434
+  },
+  "subgroups": [
+    {
+      "auc": 0.6504,
+      "brier": 0.00834,
+      "calib_slope": 1.136,
+      "calib_intercept": 0.0229,
+      "mean_pred": 0.0082,
+      "obs": 0.0084,
+      "subgroup": "age 40-54"
+    },
+    {
+      "auc": 0.5779,
+      "brier": 0.01908,
+      "calib_slope": 0.7304,
+      "calib_intercept": 0.0022,
+      "mean_pred": 0.0194,
+      "obs": 0.0195,
+      "subgroup": "age 55-64"
+    },
+    {
+      "auc": 0.5675,
+      "brier": 0.03737,
+      "calib_slope": 0.5355,
+      "calib_intercept": -0.1495,
+      "mean_pred": 0.0447,
+      "obs": 0.0388,
+      "subgroup": "age 65-74"
+    },
+    {
+      "auc": 0.6326,
+      "brier": 0.09977,
+      "calib_slope": 0.9037,
+      "calib_intercept": -0.3773,
+      "mean_pred": 0.1542,
+      "obs": 0.1123,
+      "subgroup": "age 75+"
+    },
+    {
+      "auc": 0.7651,
+      "brier": 0.02815,
+      "calib_slope": 0.8313,
+      "calib_intercept": -0.0804,
+      "mean_pred": 0.0323,
+      "obs": 0.03,
+      "subgroup": "sex male"
+    },
+    {
+      "auc": 0.7794,
+      "brier": 0.03785,
+      "calib_slope": 0.8836,
+      "calib_intercept": -0.3272,
+      "mean_pred": 0.0547,
+      "obs": 0.0411,
+      "subgroup": "sex female"
+    }
+  ],
+  "coef_table": [
+    {
+      "term": "Intercept",
+      "beta": -8.7706,
+      "se": 2.88793,
+      "OR": 0.0002,
+      "OR_lo": 0.0,
+      "OR_hi": 0.0446,
+      "p_raw": 0.00239
+    },
+    {
+      "term": "age_lin",
+      "beta": 0.08182,
+      "se": 0.06005,
+      "OR": 1.0853,
+      "OR_lo": 0.9648,
+      "OR_hi": 1.2208,
+      "p_raw": 0.17303
+    },
+    {
+      "term": "age_r1",
+      "beta": -4e-05,
+      "se": 0.00011,
+      "OR": 1.0,
+      "OR_lo": 0.9997,
+      "OR_hi": 1.0002,
+      "p_raw": 0.73115
+    },
+    {
+      "term": "age_r2",
+      "beta": 0.00015,
+      "se": 0.00027,
+      "OR": 1.0002,
+      "OR_lo": 0.9996,
+      "OR_hi": 1.0007,
+      "p_raw": 0.56931
+    },
+    {
+      "term": "male",
+      "beta": -0.46834,
+      "se": 0.1536,
+      "OR": 0.626,
+      "OR_lo": 0.4633,
+      "OR_hi": 0.8459,
+      "p_raw": 0.00229,
+      "p_holm7": 0.01606
+    },
+    {
+      "term": "smoke_former",
+      "beta": 0.33287,
+      "se": 0.1606,
+      "OR": 1.395,
+      "OR_lo": 1.0183,
+      "OR_hi": 1.911,
+      "p_raw": 0.0382,
+      "p_holm7": 0.22919
+    },
+    {
+      "term": "smoke_current",
+      "beta": 0.14095,
+      "se": 0.24788,
+      "OR": 1.1514,
+      "OR_lo": 0.7083,
+      "OR_hi": 1.8716,
+      "p_raw": 0.56961,
+      "p_holm7": 1.0
+    },
+    {
+      "term": "obesity",
+      "beta": 0.20144,
+      "se": 0.1575,
+      "OR": 1.2232,
+      "OR_lo": 0.8983,
+      "OR_hi": 1.6655,
+      "p_raw": 0.20088,
+      "p_holm7": 0.80353
+    },
+    {
+      "term": "hypertension",
+      "beta": -0.01854,
+      "se": 0.15397,
+      "OR": 0.9816,
+      "OR_lo": 0.7259,
+      "OR_hi": 1.3274,
+      "p_raw": 0.90417,
+      "p_holm7": 1.0
+    },
+    {
+      "term": "diabetes",
+      "beta": 0.11875,
+      "se": 0.18097,
+      "OR": 1.1261,
+      "OR_lo": 0.7898,
+      "OR_hi": 1.6055,
+      "p_raw": 0.51169,
+      "p_holm7": 1.0
+    },
+    {
+      "term": "dyslipidemia",
+      "beta": 0.27044,
+      "se": 0.14695,
+      "OR": 1.3105,
+      "OR_lo": 0.9826,
+      "OR_hi": 1.748,
+      "p_raw": 0.06571,
+      "p_holm7": 0.32857
+    }
+  ],
+  "age_wald": {
+    "statistic": 180.0,
+    "df": 3,
+    "p": 8.804365778631005e-39,
+    "method": "joint Wald chi-square (age basis terms jointly = 0)"
+  },
+  "EPV": {
+    "events": 214,
+    "predictor_terms": 10,
+    "EPV_by_predictors": 30.6,
+    "EPV_by_df": 21.4
+  },
+  "worked_example": {
+    "desc": "70y male, former smoker, obese, hypertensive, non-diabetic, high-cholesterol",
+    "linear_predictor": -2.9125,
+    "probability": 0.0515
+  },
+  "knots": [
+    41.0,
+    53.0,
+    65.0,
+    80.0
+  ],
+  "objective": {
+    "meta": {
+      "n_valid_worseye_grading": 5560,
+      "n_age40_cc": 5773,
+      "pct_ungradeable_or_missing": 0.1223
+    },
+    "metrics": {
+      "any-ARM": {
+        "n": 5067,
+        "events": 388,
+        "prev": 0.07657,
+        "auc_full": 0.7483,
+        "auc_ageonly": 0.7628,
+        "calib_full": {
+          "auc": 0.7483,
+          "brier": 0.06796,
+          "calib_slope": 0.8649,
+          "calib_intercept": 0.9312,
+          "mean_pred": 0.0339,
+          "obs": 0.0766
+        }
+      },
+      "late-AMD": {
+        "n": 5100,
+        "events": 47,
+        "prev": 0.00922,
+        "auc_full": 0.8937,
+        "auc_ageonly": 0.901,
+        "calib_full": {
+          "auc": 0.8937,
+          "brier": 0.00983,
+          "calib_slope": 1.6571,
+          "calib_intercept": -1.378,
+          "mean_pred": 0.0341,
+          "obs": 0.0092
+        }
+      }
+    },
+    "concordance": {
+      "n": 5067,
+      "fundus_pos_self_pos": 72,
+      "fundus_pos_self_neg": 316,
+      "fundus_neg_self_pos": 91,
+      "both_neg": 4588
+    }
+  },
+  "dca_prespec": [
+    {
+      "threshold": 0.02,
+      "nb_model": 0.02102,
+      "nb_all": 0.01631,
+      "flagged_per_1000": 501,
+      "cases_identified_per_1000": 30,
+      "sensitivity": 0.851,
+      "cases_missed_per_1000": 5
+    },
+    {
+      "threshold": 0.05,
+      "nb_model": 0.01091,
+      "nb_all": -0.01475,
+      "flagged_per_1000": 243,
+      "cases_identified_per_1000": 22,
+      "sensitivity": 0.626,
+      "cases_missed_per_1000": 13
+    },
+    {
+      "threshold": 0.08,
+      "nb_model": 0.00607,
+      "nb_all": -0.04784,
+      "flagged_per_1000": 162,
+      "cases_identified_per_1000": 18,
+      "sensitivity": 0.515,
+      "cases_missed_per_1000": 17
+    },
+    {
+      "threshold": 0.1,
+      "nb_model": 0.00412,
+      "nb_all": -0.07113,
+      "flagged_per_1000": 131,
+      "cases_identified_per_1000": 16,
+      "sensitivity": 0.468,
+      "cases_missed_per_1000": 19
+    }
+  ]
+}

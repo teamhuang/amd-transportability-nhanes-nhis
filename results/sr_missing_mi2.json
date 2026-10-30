@@ -1,0 +1,113 @@
+{
+  "complete_case": {
+    "ext_auc": 0.7737,
+    "ext_slope": 0.8723,
+    "ext_citl": -0.2131,
+    "der_auc": 0.7911,
+    "coef": {
+      "const": -9.6317,
+      "age": 0.0945,
+      "male": -0.4657,
+      "smoke_former": 0.307,
+      "smoke_current": 0.1179,
+      "obesity": 0.1668,
+      "hypertension": -0.0185,
+      "diabetes": 0.089,
+      "dyslipidemia": 0.2686
+    }
+  },
+  "multiple_imputation": {
+    "method": "proper MICE (chained equations): logistic for 4 binary predictors, multinomial logit for 3-category smoking; beta* ~ N(beta_hat,Cov) draws, T=15 sweeps, m=20",
+    "M": 20,
+    "sweeps": 15,
+    "binary_model": "logistic",
+    "smoking_model": "multinomial-logit (never/former/current)",
+    "outcome_inclusive": true,
+    "auxiliary": "age, sex, outcome, survey cycle (SDDSRVYR)",
+    "ext_auc_mean": 0.7744,
+    "ext_auc_min": 0.7723,
+    "ext_auc_max": 0.7756,
+    "ext_auc_sd": 0.0009,
+    "der_auc_mean": 0.7912,
+    "ext_slope_mean": 0.9018,
+    "ext_citl_mean": -0.2204,
+    "pooled_coef": {
+      "const": -9.4898,
+      "age": 0.0932,
+      "male": -0.3294,
+      "smoke_former": 0.1454,
+      "smoke_current": 0.0501,
+      "obesity": 0.0752,
+      "hypertension": 0.0101,
+      "diabetes": 0.1508,
+      "dyslipidemia": 0.224
+    },
+    "age_coef": {
+      "pooled": 0.0932,
+      "rubin_total_se": 0.0067,
+      "ci95": [
+        0.0801,
+        0.1064
+      ],
+      "barnard_rubin_df": 444741640858.1
+    },
+    "validity": {
+      "binary_imputations_valid_01_always": true,
+      "illegal_smoking_combos": 0,
+      "out_of_range_cells": 0,
+      "note": "categorical Bernoulli/multinomial sampling makes out-of-range and illegal-combination draws structurally impossible"
+    }
+  },
+  "diagnostics": {
+    "binary": [
+      {
+        "variable": "obesity",
+        "model": "logistic",
+        "n_missing": 429,
+        "pct_missing": 6.12,
+        "observed_positive_pct": 37.4,
+        "imputed_overall_positive_pct": 37.66
+      },
+      {
+        "variable": "hypertension",
+        "model": "logistic",
+        "n_missing": 869,
+        "pct_missing": 12.39,
+        "observed_positive_pct": 25.71,
+        "imputed_overall_positive_pct": 26.94
+      },
+      {
+        "variable": "dyslipidemia",
+        "model": "logistic",
+        "n_missing": 659,
+        "pct_missing": 9.4,
+        "observed_positive_pct": 44.62,
+        "imputed_overall_positive_pct": 44.44
+      },
+      {
+        "variable": "diabetes",
+        "model": "logistic",
+        "n_missing": 8,
+        "pct_missing": 0.11,
+        "observed_positive_pct": 15.76,
+        "imputed_overall_positive_pct": 16.45
+      }
+    ],
+    "smoking": {
+      "variable": "smoking (3-category)",
+      "model": "multinomial-logit",
+      "n_missing": 7,
+      "pct_missing": 0.1,
+      "observed_pct": {
+        "never": 48.5,
+        "former": 31.8,
+        "current": 19.6
+      },
+      "imputed_overall_pct": {
+        "never": 48.5,
+        "former": 31.9,
+        "current": 19.6
+      }
+    }
+  }
+}

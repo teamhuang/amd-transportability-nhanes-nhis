@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "w_prevalence": [
+      0.0288,
+      0.0288
+    ],
+    "w_auc": [
+      0.7874,
+      0.7874
+    ],
+    "u_auc": [
+      0.7737,
+      0.7737
+    ],
+    "dAUROC_full_age": [
+      0.0036,
+      0.00367
+    ],
+    "mi_ext_auc_mean": [
+      0.7744,
+      0.7744
+    ]
+  },
+  "objective_sign_indep": -0.0117,
+  "numeric_ok": true,
+  "figs_fresh": true,
+  "verdict": "PASS"
+}

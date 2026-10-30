@@ -1,0 +1,47 @@
+{
+  "n_age40_valid_amd": 7011,
+  "n_cc": 5773,
+  "n_valid_anyARM_within_cc": 5067,
+  "n_valid_lateARM_within_cc": 5100,
+  "n_valid_both_self_anyARM": 5067,
+  "anyARM_events": 388,
+  "lateARM_events": 47,
+  "pct_no_anyARM_grading_within_cc": 12.23,
+  "pct_no_lateARM_grading_within_cc": 11.66,
+  "anyARM": {
+    "n": 5067,
+    "events": 388,
+    "auc_full": 0.751,
+    "auc_age": 0.7628,
+    "calib": {
+      "slope": 0.834,
+      "intercept": 0.917,
+      "mean_pred": 0.0342,
+      "obs": 0.0766
+    }
+  },
+  "lateAMD": {
+    "n": 5100,
+    "events": 47,
+    "auc_full": 0.8941,
+    "auc_age": 0.901,
+    "auc_full_CI95": [
+      0.849,
+      0.933
+    ],
+    "n_boot_valid": 2000,
+    "calib": {
+      "slope": 1.801,
+      "intercept": -1.382,
+      "mean_pred": 0.0344,
+      "obs": 0.0092
+    }
+  },
+  "concordance": {
+    "n": 5067,
+    "fundus_pos_self_pos": 72,
+    "fundus_pos_self_neg": 316,
+    "fundus_neg_self_pos": 91,
+    "both_neg": 4588
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "intercept_lp_at_ref": -4.4679,
+  "points": {
+    "male": 0,
+    "smoke_former": 0,
+    "smoke_current": 0,
+    "obesity": 0,
+    "hypertension": 0,
+    "diabetes": 0,
+    "dyslipidemia": 0
+  },
+  "betas": {
+    "male": -0.4682,
+    "smoke_former": 0.3291,
+    "smoke_current": 0.1394,
+    "obesity": 0.1984,
+    "hypertension": -0.0178,
+    "diabetes": 0.1161,
+    "dyslipidemia": 0.2718
+  }
+}

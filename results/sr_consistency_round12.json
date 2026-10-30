@@ -1,0 +1,349 @@
+{
+  "checks": [
+    {
+      "check": "every main figure reference resolves to a file",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "every supplementary figure reference resolves to a file",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "every supplementary figure has an SI legend",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "main display items <= 8",
+      "pass": true,
+      "detail": "3 figures + 5 tables = 8"
+    },
+    {
+      "check": "references numbered by first appearance",
+      "pass": true,
+      "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]"
+    },
+    {
+      "check": "supplementary tables numbered by first appearance",
+      "pass": true,
+      "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]"
+    },
+    {
+      "check": "main figures numbered by first appearance",
+      "pass": true,
+      "detail": "[1, 2, 3]"
+    },
+    {
+      "check": "supplementary figures numbered by first appearance",
+      "pass": true,
+      "detail": "[1, 2, 3, 4, 5]"
+    },
+    {
+      "check": "every supplementary table is cited",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "every main figure is cited",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "every supplementary figure is cited",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "bold used only in figure titles",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "every figure file is a valid, non-trivial PDF/PNG",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "every table reference resolves to a heading",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "narrative uses one minus-sign convention",
+      "pass": true,
+      "detail": "{'u2212': 25, 'ascii': 0}"
+    },
+    {
+      "check": "tables use one minus-sign convention",
+      "pass": true,
+      "detail": "{'u2212': 0, 'ascii': 55}"
+    },
+    {
+      "check": "decimal precision is deliberate",
+      "pass": true,
+      "detail": "3 dp=72, 4 dp=33"
+    },
+    {
+      "check": "'late AMD' always tied to the photographic OPDULARM definition",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "no revision-process language",
+      "pass": true,
+      "detail": "[]"
+    }
+  ],
+  "findings": [],
+  "main_figures": [
+    1,
+    2,
+    3
+  ],
+  "si_figures": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "figure_files": [
+    {
+      "file": "Fig1_cohort_flow.pdf",
+      "bytes": 23624,
+      "ok": true
+    },
+    {
+      "file": "Fig2_forest_derivation.pdf",
+      "bytes": 34830,
+      "ok": true
+    },
+    {
+      "file": "Fig3_transportability.pdf",
+      "bytes": 23525,
+      "ok": true
+    },
+    {
+      "file": "Fig4_calibration_curve.pdf",
+      "bytes": 17046,
+      "ok": true
+    },
+    {
+      "file": "Fig5_DCA.pdf",
+      "bytes": 19307,
+      "ok": true
+    },
+    {
+      "file": "Fig6_objective_sensitivity.pdf",
+      "bytes": 20205,
+      "ok": true
+    },
+    {
+      "file": "Fig7_model_comparison.pdf",
+      "bytes": 19168,
+      "ok": true
+    },
+    {
+      "file": "Fig8_temporal_recalibration.pdf",
+      "bytes": 16439,
+      "ok": true
+    },
+    {
+      "file": "Fig9_objective.pdf",
+      "bytes": 21827,
+      "ok": true
+    },
+    {
+      "file": "FigSR1_transportability.pdf",
+      "bytes": 36381,
+      "ok": true
+    },
+    {
+      "file": "FigSR2_model_comparison.pdf",
+      "bytes": 33132,
+      "ok": true
+    },
+    {
+      "file": "FigSR3_calibration.pdf",
+      "bytes": 34468,
+      "ok": true
+    },
+    {
+      "file": "FigSR4_DCA.pdf",
+      "bytes": 36380,
+      "ok": true
+    },
+    {
+      "file": "FigSR5_objective.pdf",
+      "bytes": 38071,
+      "ok": true
+    },
+    {
+      "file": "FigSR6_weighted_calibration.pdf",
+      "bytes": 36267,
+      "ok": true
+    },
+    {
+      "file": "FigSR7_calibration_selfreport.pdf",
+      "bytes": 43373,
+      "ok": true
+    },
+    {
+      "file": "FigSR8_calibration_objective.pdf",
+      "bytes": 36584,
+      "ok": true
+    },
+    {
+      "file": "Fig1_cohort_flow.png",
+      "bytes": 113931,
+      "ok": true
+    },
+    {
+      "file": "Fig2_forest_derivation.png",
+      "bytes": 109194,
+      "ok": true
+    },
+    {
+      "file": "Fig3_transportability.png",
+      "bytes": 125309,
+      "ok": true
+    },
+    {
+      "file": "Fig4_calibration_curve.png",
+      "bytes": 101892,
+      "ok": true
+    },
+    {
+      "file": "Fig5_DCA.png",
+      "bytes": 100371,
+      "ok": true
+    },
+    {
+      "file": "Fig6_objective_sensitivity.png",
+      "bytes": 94905,
+      "ok": true
+    },
+    {
+      "file": "Fig7_model_comparison.png",
+      "bytes": 69695,
+      "ok": true
+    },
+    {
+      "file": "Fig8_temporal_recalibration.png",
+      "bytes": 63401,
+      "ok": true
+    },
+    {
+      "file": "Fig9_objective.png",
+      "bytes": 96348,
+      "ok": true
+    },
+    {
+      "file": "FigSR1_transportability.png",
+      "bytes": 91469,
+      "ok": true
+    },
+    {
+      "file": "FigSR2_model_comparison.png",
+      "bytes": 69278,
+      "ok": true
+    },
+    {
+      "file": "FigSR3_calibration.png",
+      "bytes": 110497,
+      "ok": true
+    },
+    {
+      "file": "FigSR4_DCA.png",
+      "bytes": 92772,
+      "ok": true
+    },
+    {
+      "file": "FigSR5_objective.png",
+      "bytes": 74255,
+      "ok": true
+    },
+    {
+      "file": "FigSR6_weighted_calibration.png",
+      "bytes": 116806,
+      "ok": true
+    },
+    {
+      "file": "FigSR7_calibration_selfreport.png",
+      "bytes": 142077,
+      "ok": true
+    },
+    {
+      "file": "FigSR8_calibration_objective.png",
+      "bytes": 121595,
+      "ok": true
+    }
+  ],
+  "table_headings": [
+    "Table 1",
+    "Table 2",
+    "Table 3",
+    "Table 4",
+    "Table 5",
+    "Supplementary Table S1",
+    "Supplementary Table S10",
+    "Supplementary Table S11",
+    "Supplementary Table S12",
+    "Supplementary Table S13",
+    "Supplementary Table S14",
+    "Supplementary Table S2",
+    "Supplementary Table S3",
+    "Supplementary Table S4",
+    "Supplementary Table S5",
+    "Supplementary Table S6",
+    "Supplementary Table S7",
+    "Supplementary Table S8",
+    "Supplementary Table S9"
+  ],
+  "table_refs": [
+    "Supplementary Table S1",
+    "Supplementary Table S10",
+    "Supplementary Table S11",
+    "Supplementary Table S12",
+    "Supplementary Table S13",
+    "Supplementary Table S14",
+    "Supplementary Table S2",
+    "Supplementary Table S3",
+    "Supplementary Table S4",
+    "Supplementary Table S5",
+    "Supplementary Table S6",
+    "Supplementary Table S7",
+    "Supplementary Table S8",
+    "Supplementary Table S9",
+    "Table 1",
+    "Table 2",
+    "Table 3",
+    "Table 4",
+    "Table 5"
+  ],
+  "minus_sign": {
+    "narrative": {
+      "u2212": 25,
+      "ascii": 0
+    },
+    "tables": {
+      "u2212": 0,
+      "ascii": 55
+    }
+  },
+  "decimal_precision": {
+    "3dp": 72,
+    "4dp": 33
+  },
+  "terminology_counts": {
+    "any-ARM": 16,
+    "any ARM": 0,
+    "late AMD": 5,
+    "late ARM": 4,
+    "early ARM": 1,
+    "photographic": 17
+  },
+  "verdict": "PASS"
+}

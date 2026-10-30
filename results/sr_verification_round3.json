@@ -1,0 +1,31 @@
+{
+  "independent_weighted": {
+    "w_auc": [
+      0.7874,
+      0.7874
+    ],
+    "w_slope": [
+      0.9035,
+      0.9035
+    ],
+    "w_citl": [
+      -0.2375,
+      -0.2375
+    ],
+    "w_meanpred": [
+      0.0357,
+      0.0357
+    ],
+    "w_obs": [
+      0.0288,
+      0.0288
+    ],
+    "w_overpred": [
+      1.241,
+      1.241
+    ]
+  },
+  "numeric_ok": true,
+  "fig6_fresh": true,
+  "verdict": "PASS"
+}
