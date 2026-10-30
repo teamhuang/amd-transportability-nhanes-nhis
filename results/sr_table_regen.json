@@ -1,5 +1,5 @@
 {
-  "regenerated_at": "2026-10-31 00:28:46",
+  "regenerated_at": "2026-10-31 01:21:08",
   "runs": [
     {
       "script": "make_tables_sr.py",
@@ -16,7 +16,7 @@
     {
       "script": "make_round4_tables_figs.py",
       "returncode": 0,
-      "seconds": 1.4,
+      "seconds": 1.5,
       "stderr_tail": ""
     }
   ],
@@ -25,17 +25,19 @@
     "analysis\\output\\Tables_sr.md": "d6563f916129f500a691593754d60dc364f34b08215fbaaa1f59ad8322230f7a",
     "analysis\\output\\Tables_sr4.md": "59284e089d0b5418cf14a38a4b340ed6a014d29e00d15a170ca3c09b358739f8",
     "manuscript\\harmonization_dictionary.md": "e95ea7f5715cc113057cd38ac52d7bb53a4338bf9dc894ea883445f9ee3e5382",
-    "manuscript\\题目4手稿.md": "67ae03dc6b4d8827409da1393e00e58b98e833b4abe6c66fc6240e9f54938f19",
-    "manuscript\\Supplementary_Information.md": "93370bfe4b4614b4827d7a13af3a0b310d5a3a5f5ba0a90a8a67b0ece4266be4"
+    "manuscript\\题目4手稿.md": "b84ca3e1a75bcce5642e10eb2af1deeb5bbd5295709ad593e003f29dd236a90a",
+    "manuscript\\Supplementary_Information.md": "20748a24fff95a090c9254965e75689dc608cc51df3657d5cf1ee69d40e7e904"
   },
   "hashes_after": {
-    "analysis\\output\\Tables_sr.md": "d6563f916129f500a691593754d60dc364f34b08215fbaaa1f59ad8322230f7a",
+    "analysis\\output\\Tables_sr.md": "af8398c1771ad3dce260e21cc909af35e6b95705e84cb3c8347d6b4ce3c84e1d",
     "analysis\\output\\Tables_sr4.md": "59284e089d0b5418cf14a38a4b340ed6a014d29e00d15a170ca3c09b358739f8",
     "manuscript\\harmonization_dictionary.md": "e95ea7f5715cc113057cd38ac52d7bb53a4338bf9dc894ea883445f9ee3e5382",
-    "manuscript\\题目4手稿.md": "67ae03dc6b4d8827409da1393e00e58b98e833b4abe6c66fc6240e9f54938f19",
-    "manuscript\\Supplementary_Information.md": "93370bfe4b4614b4827d7a13af3a0b310d5a3a5f5ba0a90a8a67b0ece4266be4"
+    "manuscript\\题目4手稿.md": "b84ca3e1a75bcce5642e10eb2af1deeb5bbd5295709ad593e003f29dd236a90a",
+    "manuscript\\Supplementary_Information.md": "20748a24fff95a090c9254965e75689dc608cc51df3657d5cf1ee69d40e7e904"
   },
-  "files_changed": [],
+  "files_changed": [
+    "analysis\\output\\Tables_sr.md"
+  ],
   "tables_in_generated_files": [
     "Table 1",
     "Table 2",
@@ -84,7 +86,7 @@
     "Supplementary Table S14"
   ],
   "applied_to_manuscript": false,
-  "manuscript_last_edited": "2026-10-30 23:55:19",
+  "manuscript_last_edited": "2026-10-31 00:50:55",
   "first_difference_main": null,
   "first_difference_si": null,
   "verdict": "PASS"
