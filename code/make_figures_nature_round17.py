@@ -167,7 +167,6 @@ ax.set_ylim(0.6, 0.85)
 ax.set_ylabel("AUROC")
 ax.legend(frameon=False, loc="upper right", ncol=2, handlelength=1.2,
           columnspacing=0.9, borderaxespad=0.2)
-panel(fig, ax, "A")
 save(fig, "FigSR2_model_comparison")
 
 # ---------------- FigSR3 ----------------
@@ -190,7 +189,6 @@ ax.plot([0, 0.12], [0, 0.12], ls="--", color=OI["black"], lw=0.6, label="Ideal")
 ax.set_xlim(0, 0.12); ax.set_ylim(0, 0.12)
 ax.set_xlabel("Predicted risk"); ax.set_ylabel("Observed AMD")
 ax.legend(frameon=False, loc="upper left", handlelength=1.2, borderaxespad=0.3)
-panel(fig, ax, "A")
 save(fig, "FigSR3_calibration")
 
 # ---------------- FigSR4 ----------------
@@ -205,7 +203,6 @@ ax.plot(th, nball, "^:", color=OI["black"], label="Treat all", ms=2.4)
 ax.axhline(0, color=OI["grey"], lw=0.6, label="Treat none")
 ax.set_xlabel("Threshold probability"); ax.set_ylabel("Net benefit")
 ax.legend(frameon=False, loc="lower left", handlelength=1.6, borderaxespad=0.3)
-panel(fig, ax, "A")
 save(fig, "FigSR4_DCA")
 
 # ---------------- FigSR5 ----------------
@@ -313,7 +310,6 @@ ax.set_xticks([0, 1]); ax.set_xticklabels([r[0] for r in rows], fontsize=5.5)
 ax.set_ylim(3.2, 4.6); ax.set_ylabel("Risk (%)")
 ax.legend(frameon=False, loc="lower center", bbox_to_anchor=(0.5, 1.02), ncol=3,
           handlelength=1.0, columnspacing=1.2, borderaxespad=0.0)
-panel(fig, ax, "A")
 save(fig, "FigSR9_crossyear_recalibration")
 
 print("written:", [f"FigSR{i}" for i in range(1, 10)])
