@@ -49,7 +49,7 @@ Both are de-identified public-use files released by the US National Center for H
 6. Verify the outputs with `regen_tables_round12.py`, `audit_codebook_round12.py`,
    `audit_consistency_round12.py` and `verify_round4.py`.
 
-The manuscript's main text carries 4 figures and 4 tables; Supplementary Tables S1–S15 and Supplementary Figs S1–S5 are in the separate Supplementary Information file submitted with the manuscript.
+The manuscript's main text carries 4 figures and 4 tables; Supplementary Tables S1–S19 and Supplementary Figs S1–S5 are in the separate Supplementary Information file submitted with the manuscript.
 
 ## Important notes
 
