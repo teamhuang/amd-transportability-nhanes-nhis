@@ -27,7 +27,7 @@ It contains the analysis code, machine-readable results, derived analytic datase
   (`nhanes_derivation.csv`, `nhis_external.csv`). Raw NCHS transport files are **not** redistributed;
   download them from CDC/NCHS (links below).
 - `documentation/` — variable-harmonisation dictionary, endpoint-code audit log and the design-freeze/admission record.
-- `figures/` — final manuscript figures (PDF + PNG, Nature-style, 5.0 × 5.0 or 6.5 × 5.0 cm).
+- `figures/` — the nine final manuscript figures (PDF + PNG, Nature-style, 5.0 × 5.0 or 6.5 × 5.0 cm).
 - `environment/` — exact package versions (`requirements.txt`, `environment.txt`).
 
 ## Data sources
@@ -49,7 +49,7 @@ Both are de-identified public-use files released by the US National Center for H
 6. Verify the outputs with `regen_tables_round12.py`, `audit_codebook_round12.py`,
    `audit_consistency_round12.py` and `verify_round4.py`.
 
-The manuscript's main text carries 3 figures and 5 tables; Supplementary Tables S1–S14 and Supplementary Figs S1–S5 are in the separate Supplementary Information file submitted with the manuscript.
+The manuscript's main text carries 4 figures and 4 tables; Supplementary Tables S1–S15 and Supplementary Figs S1–S5 are in the separate Supplementary Information file submitted with the manuscript.
 
 ## Important notes
 
