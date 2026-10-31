@@ -294,4 +294,26 @@ for ax, endpoint, col in [(a1, "obj_anyARM", OI["orange"]), (a2, "obj_lateARM", 
 panel(fig, a1, "A"); panel(fig, a2, "B")
 save(fig, "FigSR8_calibration_objective")
 
-print("written:", [f"FigSR{i}" for i in range(1, 9)])
+
+# ---------------- FigSR9: cross-year recalibration ----------------
+tempo = json.load(open(OUT / "sr_temporal.json"))
+rows = [
+    ("2017"+chr(10)+"from 2016", tempo["y2017_frozen"], tempo["y2017_recal2016"]),
+    ("2016"+chr(10)+"from 2017", tempo["y2016_frozen"], tempo["y2016_recal2017"]),
+]
+fig, (ax,) = canvas(W2, 1, left=0.13, right=0.97, bottom=0.25, top=0.84)
+for i, (lab, frozen, updated) in enumerate(rows):
+    yf = frozen["mean_pred"] * 100; yu = updated["mean_pred"] * 100; yo = updated["obs"] * 100
+    ax.annotate("", xy=(i, yu), xytext=(i - 0.14, yf),
+                arrowprops=dict(arrowstyle="-|>", color=OI["grey"], lw=0.7, shrinkA=0, shrinkB=2))
+    ax.plot(i - 0.14, yf, "s", mfc="white", mec=OI["grey"], ms=4, mew=0.8, label="Frozen" if i == 0 else None)
+    ax.plot(i, yu, "o", color=OI["green"], ms=4, label="Updated" if i == 0 else None)
+    ax.plot(i + 0.14, yo, "D", color=OI["blue"], ms=3.2, label="Observed" if i == 0 else None)
+ax.set_xticks([0, 1]); ax.set_xticklabels([r[0] for r in rows], fontsize=5.5)
+ax.set_ylim(3.2, 4.6); ax.set_ylabel("Risk (%)")
+ax.legend(frameon=False, loc="lower center", bbox_to_anchor=(0.5, 1.02), ncol=3,
+          handlelength=1.0, columnspacing=1.2, borderaxespad=0.0)
+panel(fig, ax, "A")
+save(fig, "FigSR9_crossyear_recalibration")
+
+print("written:", [f"FigSR{i}" for i in range(1, 10)])
